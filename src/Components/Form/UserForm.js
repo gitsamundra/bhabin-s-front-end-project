@@ -6,12 +6,10 @@ import useStyles from './userFormStyles';
 import { useDispatch} from 'react-redux';
 import { userLoggedIn } from '../actions/user';
 import Input from './Input';
-import { useNavigate } from 'react-router';
 
 
 const UserForm = () => {
     const [showPassword, setShowPassword] = useState(false);
-    const navigate = useNavigate();
     const dispatch = useDispatch();
     const classes = useStyles()
     const [formData, setFormData] = useState({
