@@ -14,8 +14,8 @@ const Navbar = ({setUser, user}) => {
     };
 
     return (
-        <AppBar className={classes.appBar} position='static' color='inherit'>
-            <div className={classes.brandContainer}>
+        <AppBar className={classes.appBar} position='static' color='inherit' style={{display: 'flex', justifyContent:'space-between', flexDirection: 'row'}}>
+            <div className={classes.brandContainer} >
                 <Typography  align='center' variant='h5'>Ganesh</Typography>
                 <img src={ganesh} alt="" height="30" className={classes.image}/>
             </div>
