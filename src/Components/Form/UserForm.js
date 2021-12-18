@@ -31,7 +31,10 @@ const UserForm = () => {
     
     const handleSubmit = async(e) => {
         e.preventDefault();
-        dispatch(userLoggedIn(formData))
+        dispatch(userLoggedIn(formData));
+        setTimeout(() => {
+            window.location.reload();
+        }, 1000)
     };
 
     return (

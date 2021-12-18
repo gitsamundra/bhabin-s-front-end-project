@@ -36,8 +36,7 @@ export const editPost = (id, post) => async(dispatch) => {
             }),
             body: JSON.stringify(post)
         });
-        const data = await res.json();
-        console.log(data);
+        await res.json();
         return dispatch({ type: 'EDIT_POST', payload: post });
     } catch (error) {
         console.log(error.message);
